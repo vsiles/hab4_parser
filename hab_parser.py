@@ -254,7 +254,7 @@ def main(filename):
                 bytes_left += 4 - align
             fp.seek(bytes_left, os.SEEK_CUR)
         else:
-            print "Reading 0x%x"%val
+            print "Reading 0x%x"%tag
 
         fp_cur = fp.tell()
         if fp_cur == fp_last:
